@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>르주르dd</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.nav .gnb > li').mouseenter(function(){
+                // $('.depth02_wrap').slideDown();
+                $(this).find('.depth02_wrap').stop().slideDown();
+            });  
+
+            $('.depth02_wrap').mouseleave(function(){
+                $(this).stop().slideUp();
+            });
+
+
+            $('.search img').click(function(){
+                $('.search_box').slideToggle()
+            });
+            
+            
+        });//script end
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#"><img src="img/logo.png" alt="Le Jour"></a>
+            </h1><!-- .logo end -->
+
+            <nav class="nav">
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="depth01">BRAND STORY</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="depth01">PRODUCT</a>
+                        <div class="depth02_wrap">
+                            <div class="inner">
+                                <ul class="depth02">
+                                    <li>
+                                        <a href="#">Le Jour SET</a>
+                                        <ul class="depth03">
+                                            <li><a href="#">세탁세제 & 섬유유연제</a></li>
+                                            <li><a href="#">주방용품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Le Jour PRODUCT</a>
+                                        <ul class="depth03">
+                                            <li><a href="#">세탁세제 & 섬유유연제</a></li>
+                                            <li><a href="#">주방/탈취 용품</a></li>
+                                            <li><a href="#">욕실용품</a></li>
+                                            <li><a href="#">세탁보조제</a></li>
+                                            <li><a href="#">기프트 액세서리</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Le Jour COSMETICS</a>
+                                        <ul class="depth03">
+                                            <li><a href="#">로션/크림</a></li>
+                                        </ul>
+                                    </li>
+                                </ul><!-- .depth02 end -->
+                                <div class="depth02-image">
+                                    <img src="img/header-nav-product.jpg" alt="르브르 메뉴 제품 이미지">
+                                </div><!-- .depth02-image end -->
+                            </div>
+
+                        </div><!-- .depth02-inner  end -->
+                    </li>
+
+                    <li><a href="#" class="depth01">CONTENTS</a></li>
+                    <li><a href="#" class="depth01">REVIEW</a></li>
+                    <li><a href="#" class="depth01">Q&A</a></li>
+                    <li><a href="#" class="depth01">NOTICE</a></li>
+                    <li><a href="#" class="depth01">EVENT</a></li>
+                    <li><a href="#" class="depth01">MEMBERSHIP</a></li>
+                </ul><!-- .gnb -->
+            </nav><!-- .nav nav-pc end -->
+
+            <div class="util">
+                <div class="lang-btn">
+                    <div>LANGUAGES</div>
+                    <ul>
+                        <li><a href="#">Korean</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div><!-- lang-btn end -->
+
+                <ul class="user_menu">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">CART<img src="img/icon-cart.png" alt="장바구니"></a></li>
+                    <li class="search">
+                        <a href="#"><img src="img/icon-search.png" alt="검색하기"></a>
+                        <div class="search_box">
+                            <div class="srarch_box_in">
+                                <input type="text" placeholder="SEARCH">
+                                <img src="img/icon-searchbox.png" alt="검색">
+                            </div><!-- .srarch_box_in end -->
+                        </div><!-- .search_box end -->
+                    </li><!-- .search -->
+                </ul><!-- user_menu 둥 -->
+            </div><!-- .util end -->
+            
+        </div>
+    </header><!-- .header end -->
+
+    <main>
+        <section class="main_visual">
+            <div class="swiper mainVisual">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/visual-01.jpg" alt="르주르 제품 이미지 1"></div>
+                  <div class="swiper-slide"><img src="img/visual-02.jpg" alt="르주르 제품 이미지 2"></div>
+                </div>
+            </div>
+        </section><!-- main_visual end -->
+    </main>
+      
+  
+</body>
+
+</html>
